@@ -29,3 +29,6 @@ Route::delete('/datakonsumen/{id}', [KonsumenController::class,'destroy']);
 Route::get('/stok', [StokBarangController::class,'index'])->name('stok');
 Route::get('/stok/create', [StokBarangController::class,'createbarang'])->name('createbarang');
 Route::post('/stok/store', [StokBarangController::class,'storebarang'])->name('storebarang');
+
+// Route::get('upload-image', [UploadImageController::class, 'index']);
+// Route::post('save', [UploadImageController::class, 'save']);
